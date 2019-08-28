@@ -7,31 +7,7 @@
  * class Async is a wrapper to make AJAX calls easy.
  * Make a GET request or POST request (with data), and benefit from
  * asynchronous processing of the request.
- * The call requires:
- * 1. a URI (target script that processes the request)
- * 2. optionally data (POST request).
- *
- * example usage:
- * process.php is the target script that in a POST request,
- * receives data (key-value pairs) and returns processed data.
- *
- * In a GET request, process.php merely runs as a background process
- * asynchronously, there is no data received, only a message sent back
- * when the process is finished.
- *
- * POST data
- * $uri = "https://www.yoursite.com/process.php";
- * $data = ['firstname' => 'joHn', 'lastname' => 'bLaCk'];
- * $req = (new Async())->request($uri, $data);
- *
- *
- * GET data
- * $uri = "https://www.yoursite.com/process.php";
- * $req = (new Async())->request($uri);
  */
-
-$uri = "http://localhost/z_other/scratchpad/co-routines/index.php";
-$req = (new Async())->request($uri);
 
 class Async
 {
