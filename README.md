@@ -19,7 +19,7 @@ $req = (new Async())->request($uri, $data);
 
 
 ### GET request - example
-In a GET request, process.php merely runs as a 'background process' (asynchronously), there is no data sent to process.php. Process.php might send a message back when the process is finished.
+In a GET request, process.php merely runs as a 'background process' (asynchronously), there is no data sent to process.php. Process.php might e.g. send a message back when the process is finished.
 ```php
 $uri = "https://www.yoursite.com/process.php";
 $req = (new Async())->request($uri);
