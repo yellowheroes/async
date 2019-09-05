@@ -41,7 +41,6 @@ HEREDOC;
 
         /*
          * the ajax call with "load" event-listener,
-         * (which we baptised responseListener)
          *
          * the load event is fired when the whole page has loaded,
          * including all dependent resources
