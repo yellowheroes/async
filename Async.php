@@ -8,11 +8,16 @@
  * Make a GET request or POST request (with data), and benefit from
  * asynchronous processing of the request.
  */
+namespace yellowheroes\async;
 
 class Async
 {
     public function __construct() {}
 
+    /**
+     * @param string $uri   : the php script that processes the request
+     * @param array  $data  : data to be processed(optional) - if empty $_GET, otherwise $_POST
+     */
     public function request($uri = '', $data = []): void
     {
         /* POST - we use formData object to send data to target */
@@ -56,7 +61,7 @@ HEREDOC;
 </script>\r\n\r\n
 HEREDOC;
 
-        echo $asyncRequestHtml; // echo the AJAX script
+        echo $asyncRequestHtml; // echo the AJAX script (i.e. run the async request)
     }
 }
 
