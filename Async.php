@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * Created by Yellow Heroes
  * File: Async.php
  * Date: 05/04/2019
